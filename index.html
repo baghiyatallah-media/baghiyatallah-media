@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0b0b">
+<title>رسانه هنری بقیه‌الله | طراحی گرافیک</title>
+<meta name="description" content="رسانه هنری بقیه‌الله؛ ارائه خدمات طراحی پوستر، لوگوتایپ، تایپوگرافی و هویت بصری">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --gold: #d8b56b;
+  --dark: #0b0b0b;
+  --card: #151515;
+  --muted: #aaa;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--dark);
+  color: #f7f3e9;
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+  line-height: 1.9;
+}
+a { color: inherit; text-decoration: none; }
+.container { width: min(1100px, 90%); margin: auto; }
+header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(11,11,11,.94);
+  border-bottom: 1px solid #29231a;
+  backdrop-filter: blur(12px);
+}
+nav {
+  min-height: 75px;
+  display: flex; align-items: center;
+  justify-content: space-between; gap: 15px;
+}
+.brand { color: var(--gold); font-weight: 800; font-size: 19px; }
+nav ul { display: flex; gap: 24px; list-style: none; padding: 0; margin: 0; }
+nav a:hover { color: var(--gold); }
+.hero {
+  text-align: center;
+  padding: 105px 15px 90px;
+  background: radial-gradient(ellipse at top, #332717 0%, #15110c 30%, #0b0b0b 75%);
+}
+.logo {
+  width: 105px; height: 105px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: grid; place-items: center;
+  margin: 0 auto 25px;
+  color: var(--gold); font-size: 35px;
+  box-shadow: 0 0 35px #d8b56b22;
+}
+.hero h1 { font-size: clamp(28px, 6vw, 48px); margin: 8px 0; }
+.hero h1 span { color: var(--gold); }
+.hero p { color: #c5bdaF; max-width: 650px; margin: 15px auto 30px; }
+.btn {
+  display: inline-block; padding: 11px 25px;
+  border-radius: 9px; font-weight: 700;
+  background: var(--gold); color: #17120a;
+  transition: .2s;
+}
+.btn:hover { transform: translateY(-3px); box-shadow: 0 7px 25px #d8b56b33; }
+.btn-outline { background: transparent; color: var(--gold); border: 1px solid var(--gold); margin-right: 8px; }
+section { padding: 70px 0; }
+.section-title { text-align: center; margin-bottom: 35px; }
+.section-title h2 { font-size: 29px; margin: 0; }
+.section-title h2 span { color: var(--gold); }
+.section-title p { color: var(--muted); margin: 8px 0; }
+.about {
+  max-width: 780px; text-align: center;
+  margin: auto; color: #c8c2b7;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 18px;
+}
+.card {
+  background: linear-gradient(145deg,#191919,#101010);
+  border: 1px solid #332b1e;
+  border-radius: 14px; padding: 25px;
+  transition: .25s;
+}
+.card:hover { transform: translateY(-5px); border-color: var(--gold); }
+.card .symbol { color: var(--gold); font-size: 30px; }
+.card h3 { margin: 8px 0; color: #f4e6c8; }
+.card p { color: var(--muted); font-size: 14px; margin: 0; }
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 16px;
+}
+.work {
+  min-height: 170px; border-radius: 13px;
+  border: 1px solid #514126;
+  background: linear-gradient(135deg,#292013,#111);
+  display: grid; place-items: center;
+  text-align: center; padding: 20px;
+  color: var(--gold);
+}
+.work strong { display: block; font-size: 20px; }
+.work small { color: #c4b69c; }
+.contact {
+  text-align: center;
+  background: linear-gradient(135deg,#211a0e,#111);
+  border: 1px solid #49391e;
+  border-radius: 18px; padding: 38px 20px;
+}
+.contact p { color: #c7bdac; }
+footer {
+  text-align: center; padding: 25px 10px;
+  color: #999; border-top: 1px solid #29231a;
+  font-size: 13px;
+}
+footer span { color: var(--gold); }
+@media(max-width:650px) {
+  nav { flex-wrap: wrap; justify-content: center; padding: 12px 0; }
+  nav ul { width: 100%; justify-content: center; gap: 17px; font-size: 13px; }
+  .hero { padding: 75px 10px; }
+  section { padding: 50px 0; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#">✦ رسانه هنری بقیه‌الله</a>
+      <ul>
+        <li><a href="#about">درباره ما</a></li>
+        <li><a href="#services">خدمات</a></li>
+        <li><a href="#portfolio">نمونه‌کارها</a></li>
+        <li><a href="#contact">تماس</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="logo">ب</div>
+    <p style="color:#d8b56b">خلاقیت، هنر و هویت بصری</p>
+    <h1>رسانه هنری <span>بقیه‌الله</span></h1>
+    <p>اینجا ایده‌های شما به طرح‌هایی خاص، زیبا و ماندگار تبدیل می‌شوند.</p>
+    <a class="btn" href="#services">مشاهده خدمات</a>
+    <a class="btn btn-outline" href="#contact">ثبت سفارش</a>
+  </div>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>درباره <span>ما</span></h2>
+        <p>هنر در خدمت دیده‌شدن شما</p>
+      </div>
+      <p class="about">
+        رسانه هنری بقیه‌الله با هدف ارائه خدمات طراحی گرافیک،
+        تولید آثار بصری و خلق هویت‌های هنری فعالیت می‌کند.
+        تلاش ما ارائه طرح‌هایی خلاقانه، حرفه‌ای و متناسب با
+        نیاز مجموعه‌ها، هیئت‌ها و کسب‌وکارهاست.
+      </p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>خدمات <span>طراحی</span></h2>
+        <p>ایده شما، تخصص ما</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="symbol">✦</div>
+          <h3>طراحی پوستر و بنر</h3>
+          <p>طراحی پوسترهای تبلیغاتی، فرهنگی و مذهبی با چیدمان حرفه‌ای.</p>
+        </div>
+        <div class="card">
+          <div class="symbol">✒</div>
+          <h3>تایپوگرافی فارسی</h3>
+          <p>خلق نوشته‌های هنری، سه‌بعدی و لوگوتایپ‌های اختصاصی.</p>
+        </div>
+        <div class="card">
+          <div class="symbol">◈</div>
+          <h3>طراحی لوگو</h3>
+          <p>طراحی نشان و هویت بصری متناسب با شخصیت مجموعه شما.</p>
+        </div>
+        <div class="card">
+          <div class="symbol">▣</div>
+          <h3>پروفایل و پست</h3>
+          <p>طراحی محتوای گرافیکی جذاب برای شبکه‌های اجتماعی.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <h2>گالری <span>نمونه‌کارها</span></h2>
+        <p>بخشی از دنیای خلاقیت ما</p>
+      </div>
+      <div class="portfolio">
+        <div class="work"><div><strong>طراحی پوستر</strong><small>نمونه‌کارهای تبلیغاتی و مذهبی</small></div></div>
+        <div class="work"><div><strong>تایپوگرافی</strong><small>هنر حروف و نوشته‌های فارسی</small></div></div>
+        <div class="work"><div><strong>طراحی لوگو</strong><small>هویت بصری اختصاصی</small></div></div>
+      </div>
+      <p style="text-align:center;color:#999;font-size:13px">به‌زودی نمونه‌کارهای واقعی رسانه در این بخش قرار می‌گیرند.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact">
+        <div class="section-title">
+          <h2>سفارش <span>طراحی</span></h2>
+          <p>برای خاص دیده‌شدن، یک قدم فاصله داری!</p>
+        </div>
+        <p>برای ثبت سفارش و دریافت اطلاعات بیشتر به کانال ما مراجعه کنید.</p>
+        <a class="btn" href="https://eitaa.com/baghiyatallah_media" target="_blank" rel="noopener">ارتباط با رسانه در ایتا</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>تمام حقوق متعلق به <span>رسانه هنری بقیه‌الله</span> است.</p>
+  <p>طراحی و توسعه با عشق به هنر و خلاقیت ✦</p>
+</footer>
+
+</body>
+</html>
