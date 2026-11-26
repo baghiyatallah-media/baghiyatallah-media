@@ -130,25 +130,87 @@ footer span { color: var(--gold); }
   .hero { padding: 75px 10px; }
   section { padding: 50px 0; }
 }
-/* انیمیشن ظاهر شدن بخش‌های سایت */
-section {
-  animation: fadeInUp 0.8s ease both;
+
+
+/* ===== انیمیشن حرفه‌ای رسانه هنری بقیه الله ===== */
+
+html {
+  scroll-behavior: smooth;
 }
 
-@keyframes fadeInUp {
+/* ظاهر شدن سینمایی */
+@keyframes cinematicEnter {
   from {
     opacity: 0;
-    transform: translateY(25px);
+    transform: translateY(35px) scale(0.97);
+    filter: blur(5px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+    filter: blur(0);
   }
 }
 
-/* حرکت نرم هنگام اسکرول */
-html {
-  scroll-behavior: smooth;
+.hero h1,
+.hero p,
+.hero a {
+  animation: cinematicEnter 1s ease both;
+}
+
+.hero p {
+  animation-delay: 0.2s;
+}
+
+.hero a {
+  animation-delay: 0.4s;
+}
+
+/* درخشش طلایی دکمه‌ها */
+button,
+.btn,
+a.button {
+  transition: all 0.35s ease;
+}
+
+button:hover,
+.btn:hover,
+a.button:hover {
+  box-shadow: 0 0 12px #d4af37,
+              0 0 28px rgba(212,175,55,0.45);
+  transform: translateY(-4px);
+}
+
+/* حرکت سه‌بعدی کارت‌ها */
+.portfolio-item,
+.project-card,
+.service-card {
+  transition: transform 0.4s ease,
+              box-shadow 0.4s ease;
+}
+
+.portfolio-item:hover,
+.project-card:hover,
+.service-card:hover {
+  transform: translateY(-9px) scale(1.025);
+  box-shadow: 0 12px 30px rgba(212,175,55,0.2);
+}
+
+/* درخشش ظریف عنوان‌ها */
+h1,
+h2 {
+  text-shadow: 0 0 12px rgba(212,175,55,0.18);
+}
+
+/* رعایت تنظیمات کاهش حرکت */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 </style>
