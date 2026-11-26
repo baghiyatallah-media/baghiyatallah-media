@@ -361,5 +361,44 @@ h2 {
   <p>طراحی و توسعه با عشق به هنر و خلاقیت ✦</p>
 </footer>
 
+<script>
+function prepareOrder() {
+  const name = document.getElementById("orderName").value.trim();
+  const type = document.getElementById("orderType").value;
+  const description = document.getElementById("orderDescription").value.trim();
+  const style = document.getElementById("orderStyle").value.trim();
+
+  if (!name || !type || !description) {
+    alert("لطفاً نام، نوع سفارش و توضیحات را تکمیل کنید.");
+    return;
+  }
+
+  const message =
+`سلام، سفارش جدیدی برای رسانه هنری بقیه‌الله دارم.
+
+نام: ${name}
+نوع سفارش: ${type}
+توضیحات: ${description}
+رنگ و سبک دلخواه: ${style || "مشخص نشده"}
+
+ارسال از طریق سایت رسانه هنری بقیه‌الله`;
+
+  document.getElementById("orderMessage").value = message;
+  document.getElementById("orderResult").style.display = "block";
+}
+
+async function copyOrder() {
+  const message = document.getElementById("orderMessage").value;
+
+  try {
+    await navigator.clipboard.writeText(message);
+    alert("متن سفارش کپی شد. حالا آن را در ایتا ارسال کنید.");
+  } catch (error) {
+    document.getElementById("orderMessage").select();
+    alert("متن سفارش را انتخاب و کپی کنید.");
+  }
+}
+</script>
+
 </body>
 </html>
