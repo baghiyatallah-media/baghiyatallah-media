@@ -130,6 +130,27 @@ footer span { color: var(--gold); }
   .hero { padding: 75px 10px; }
   section { padding: 50px 0; }
 }
+/* انیمیشن ظاهر شدن بخش‌های سایت */
+section {
+  animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* حرکت نرم هنگام اسکرول */
+html {
+  scroll-behavior: smooth;
+}
+
 </style>
 </head>
 <body>
