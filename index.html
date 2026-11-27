@@ -1,4 +1,4 @@
-
+تکمیل فرم ثبت سفارش ایتا
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -345,6 +345,41 @@ h2 {
   <section id="contact">
     <div class="container">
       <div class="contact">
+       
+<div class="order-form">
+  <h3>ثبت سفارش طراحی</h3>
+  <p>برای ثبت سفارش، اطلاعات زیر را تکمیل کنید.</p>
+
+  <label>نام شما</label>
+  <input type="text" id="orderName" placeholder="نام و نام خانوادگی">
+
+  <label>نوع سفارش</label>
+  <select id="orderType">
+    <option value="">انتخاب کنید</option>
+    <option>طراحی پوستر</option>
+    <option>طراحی بنر</option>
+    <option>لوگوتایپ</option>
+    <option>طراحی پروفایل</option>
+    <option>تایپوگرافی</option>
+  </select>
+
+  <label>توضیحات سفارش</label>
+  <textarea id="orderDescription" placeholder="توضیحات سفارش"></textarea>
+
+  <label>رنگ و سبک دلخواه</label>
+  <input type="text" id="orderStyle" placeholder="مثلاً مشکی و طلایی">
+
+  <button type="button" onclick="prepareOrder()">آماده‌سازی سفارش</button>
+
+  <div id="orderResult" style="display:none;">
+    <p>متن سفارش آماده است:</p>
+    <textarea id="orderMessage" readonly rows="8"></textarea>
+    <button type="button" onclick="copyOrder()">کپی متن سفارش</button>
+    <a href="https://eitaa.com/admin_baghiyatallah" target="_blank" rel="noopener">
+      ورود به ایتا
+    </a>
+  </div>
+</div>
         <div class="section-title">
           <h2>سفارش <span>طراحی</span></h2>
           <p>برای خاص دیده‌شدن، یک قدم فاصله داری!</p>
